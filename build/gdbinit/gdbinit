@@ -1,0 +1,2 @@
+source C:/Espressif/frameworks/esp-idf-v5.4.2/examples/wifi/getting_started/station/build/gdbinit/symbols
+source C:/Espressif/frameworks/esp-idf-v5.4.2/examples/wifi/getting_started/station/build/gdbinit/connect

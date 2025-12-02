@@ -1,0 +1,42 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.7.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x400e41c6: [0;33mesp_http_client_set_post_field[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_http_client/esp_http_client.c[0m[0m:[1;31m1729[0m
+[0m--- 0x400014fd: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x4000150d: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400e41c3: [0;33mesp_http_client_set_post_field[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_http_client/esp_http_client.c[0m[0m:[1;31m1727[0m
+[0m--- 0x400d9026: [0;33msend_data_to_server[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/examples/wifi/getting_started/station/main/station_example_main.c[0m[0m:[1;31m193[0m
+[0m--- 0x400d9143: [0;33mapp_main[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/examples/wifi/getting_started/station/main/station_example_main.c[0m[0m:[1;31m235[0m
+[0m--- 0x401631cf: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4008b441: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x400e41c6: [0;33mesp_http_client_set_post_field[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_http_client/esp_http_client.c[0m[0m:[1;31m1729[0m
+[0m--- 0x400014fd: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x4000150d: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400e41c3: [0;33mesp_http_client_set_post_field[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_http_client/esp_http_client.c[0m[0m:[1;31m1727[0m
+[0m--- 0x400d9026: [0;33msend_data_to_server[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/examples/wifi/getting_started/station/main/station_example_main.c[0m[0m:[1;31m193[0m
+[0m--- 0x400d9143: [0;33mapp_main[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/examples/wifi/getting_started/station/main/station_example_main.c[0m[0m:[1;31m235[0m
+[0m--- 0x401631cf: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4008b441: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x400e41c6: [0;33mesp_http_client_set_post_field[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_http_client/esp_http_client.c[0m[0m:[1;31m1729[0m
+[0m--- 0x400014fd: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x4000150d: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400e41c3: [0;33mesp_http_client_set_post_field[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_http_client/esp_http_client.c[0m[0m:[1;31m1727[0m
+[0m--- 0x400d9026: [0;33msend_data_to_server[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/examples/wifi/getting_started/station/main/station_example_main.c[0m[0m:[1;31m193[0m
+[0m--- 0x400d9143: [0;33mapp_main[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/examples/wifi/getting_started/station/main/station_example_main.c[0m[0m:[1;31m235[0m
+[0m--- 0x401631cf: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4008b441: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x400e41c6: [0;33mesp_http_client_set_post_field[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_http_client/esp_http_client.c[0m[0m:[1;31m1729[0m
+[0m--- 0x400014fd: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x4000150d: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400e41c3: [0;33mesp_http_client_set_post_field[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/esp_http_client/esp_http_client.c[0m[0m:[1;31m1727[0m
+[0m--- 0x400d9026: [0;33msend_data_to_server[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/examples/wifi/getting_started/station/main/station_example_main.c[0m[0m:[1;31m193[0m
+[0m--- 0x400d9143: [0;33mapp_main[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/examples/wifi/getting_started/station/main/station_example_main.c[0m[0m:[1;31m235[0m
+[0m--- 0x401631cf: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4008b441: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.4.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m

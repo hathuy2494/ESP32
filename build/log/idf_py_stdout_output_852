@@ -1,0 +1,224 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15736
+load:0x40080400,len:4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (29) boot: ESP-IDF v5.4.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 30 2025 14:52:00[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e2a8h (123560) map[0m
+[0;32mI (131) esp_image: segment 1: paddr=0002e2d0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0002e2f4 vaddr=3ffb0000 size=01d24h (  7460) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=94f74h (610164) map[0m
+[0;32mI (351) esp_image: segment 4: paddr=000c4f9c vaddr=3ffb1d24 size=022e4h (  8932) load[0m
+[0;32mI (354) esp_image: segment 5: paddr=000c7288 vaddr=40080000 size=18bc0h (101312) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (416) cpu_start: Multicore app[0m
+[0;32mI (425) cpu_start: Pro cpu start user code[0m
+[0;32mI (425) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (425) app_init: Application information:[0m
+[0;32mI (425) app_init: Project name:     station[0m
+[0;32mI (429) app_init: App version:      v5.4.2-dirty[0m
+[0;32mI (433) app_init: Compile time:     Nov 30 2025 14:36:52[0m
+[0;32mI (438) app_init: ELF file SHA256:  aa01f660e...[0m
+[0;32mI (442) app_init: ESP-IDF:          v5.4.2-dirty[0m
+[0;32mI (447) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (451) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (455) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (459) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (465) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFB85F8 len 00027A08 (158 KiB): DRAM[0m
+[0;32mI (475) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (480) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (486) heap_init: At 40098BC0 len 00007440 (29 KiB): IRAM[0m
+[0;32mI (493) spi_flash: detected chip: generic[0m
+[0;32mI (495) spi_flash: flash io: dio[0m
+[0;33mW (498) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (510) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (521) main_task: Started on CPU0[0m
+[0;32mI (531) main_task: Calling app_main()[0m
+[0;32mI (551) wifi_station: ESP_WIFI_MODE_STA[0m
+[0;32mI (571) wifi:wifi driver task: 3ffc058c, prio:23, stack:6656, core=0[0m
+[0;32mI (581) wifi:wifi firmware version: bea31f3[0m
+[0;32mI (581) wifi:wifi certification version: v7.0[0m
+[0;32mI (581) wifi:config NVS flash: enabled[0m
+[0;32mI (581) wifi:config nano formatting: disabled[0m
+[0;32mI (591) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (591) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (601) wifi:Init management short buffer num: 32[0m
+[0;32mI (601) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (601) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (611) wifi:Init static rx buffer num: 10[0m
+[0;32mI (611) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (621) wifi_init: rx ba win: 6[0m
+[0;32mI (621) wifi_init: accept mbox: 6[0m
+[0;32mI (621) wifi_init: tcpip mbox: 32[0m
+[0;32mI (621) wifi_init: udp mbox: 6[0m
+[0;32mI (631) wifi_init: tcp mbox: 6[0m
+[0;32mI (631) wifi_init: tcp tx win: 5760[0m
+[0;32mI (631) wifi_init: tcp rx win: 5760[0m
+[0;32mI (641) wifi_init: tcp mss: 1440[0m
+[0;32mI (641) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (641) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (651) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (741) wifi:mode : sta (6c:c8:40:87:ed:ec)[0m
+[0;32mI (741) wifi:enable tsf[0m
+[0;32mI (741) wifi_station: wifi_init_sta finished.[0m
+[0;32mI (761) wifi:new:<6,1>, old:<1,0>, ap:<255,255>, sta:<6,1>, prof:2, snd_ch_cfg:0x0[0m
+[0;32mI (761) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (811) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (851) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (891) wifi:connected with FPT-ON TIME STUDY SPACE T5, aid = 1, channel 6, 40U, bssid = 24:cf:24:da:d2:c1[0m
+[0;32mI (891) wifi:security: WPA2-PSK, phy: bgn, rssi: -48[0m
+[0;32mI (901) wifi:pm start, type: 1[0m
+
+[0;32mI (901) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (911) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (921) wifi:<ba-add>idx:0 (ifx:0, 24:cf:24:da:d2:c1), tid:6, ssn:2, winSize:64[0m
+[0;32mI (2321) esp_netif_handlers: sta ip: 192.168.0.210, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2321) wifi_station: got ip:192.168.0.210[0m
+[0;32mI (2321) wifi_station: connected to ap SSID:FPT-ON TIME STUDY SPACE T5 password:yentinhtaptrung[0m
+[0;32mI (2331) BH1750: Khởi tạo cảm biến ánh sáng...[0m
+[0;32mI (2331) BH1750: Cường độ ánh sáng: 465.00 lx[0m
+[0;32mI (2371) wifi:<ba-add>idx:1 (ifx:0, 24:cf:24:da:d2:c1), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2591) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (7591) BH1750: Cường độ ánh sáng: 470.00 lx[0m
+[0;32mI (7791) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (12791) BH1750: Cường độ ánh sáng: 470.83 lx[0m
+[0;32mI (13001) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (18011) BH1750: Cường độ ánh sáng: 469.17 lx[0m
+[0;32mI (18231) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (23241) BH1750: Cường độ ánh sáng: 465.83 lx[0m
+[0;32mI (23441) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (28451) BH1750: Cường độ ánh sáng: 470.00 lx[0m
+[0;32mI (28671) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (33671) BH1750: Cường độ ánh sáng: 469.17 lx[0m
+[0;32mI (33801) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (38801) BH1750: Cường độ ánh sáng: 467.50 lx[0m
+[0;32mI (39211) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (44211) BH1750: Cường độ ánh sáng: 465.00 lx[0m
+[0;32mI (44461) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (49461) BH1750: Cường độ ánh sáng: 471.67 lx[0m
+[0;32mI (49661) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (54661) BH1750: Cường độ ánh sáng: 473.33 lx[0m
+[0;32mI (54891) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (59891) BH1750: Cường độ ánh sáng: 470.00 lx[0m
+[0;32mI (60121) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (65121) BH1750: Cường độ ánh sáng: 469.17 lx[0m
+[0;32mI (65341) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (70341) BH1750: Cường độ ánh sáng: 469.17 lx[0m
+[0;32mI (70561) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (75561) BH1750: Cường độ ánh sáng: 470.00 lx[0m
+[0;32mI (75651) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (80651) BH1750: Cường độ ánh sáng: 470.00 lx[0m
+[0;32mI (80901) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (85901) BH1750: Cường độ ánh sáng: 469.17 lx[0m
+[0;32mI (86011) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (91011) BH1750: Cường độ ánh sáng: 473.33 lx[0m
+[0;32mI (91241) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (96241) BH1750: Cường độ ánh sáng: 473.33 lx[0m
+[0;32mI (96371) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (101371) BH1750: Cường độ ánh sáng: 519.17 lx[0m
+[0;32mI (101471) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (106471) BH1750: Cường độ ánh sáng: 14666.67 lx[0m
+[0;32mI (106571) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (111571) BH1750: Cường độ ánh sáng: 342.50 lx[0m
+[0;32mI (111711) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (116721) BH1750: Cường độ ánh sáng: 17089.17 lx[0m
+[0;32mI (116831) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (121831) BH1750: Cường độ ánh sáng: 247.50 lx[0m
+[0;32mI (122061) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (127071) BH1750: Cường độ ánh sáng: 1830.83 lx[0m
+[0;32mI (127241) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (132251) BH1750: Cường độ ánh sáng: 177.50 lx[0m
+[0;32mI (132411) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (137411) BH1750: Cường độ ánh sáng: 5.83 lx[0m
+[0;32mI (137711) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (142721) BH1750: Cường độ ánh sáng: 6.67 lx[0m
+[0;32mI (142831) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (147841) BH1750: Cường độ ánh sáng: 3.33 lx[0m
+[0;32mI (147951) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (152951) BH1750: Cường độ ánh sáng: 3.33 lx[0m
+[0;32mI (153101) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (158101) BH1750: Cường độ ánh sáng: 3.33 lx[0m
+[0;32mI (158731) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (163731) BH1750: Cường độ ánh sáng: 248.33 lx[0m
+[0;32mI (164651) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (169661) BH1750: Cường độ ánh sáng: 32.50 lx[0m
+[0;32mI (170181) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (175181) BH1750: Cường độ ánh sáng: 31.67 lx[0m
+[0;32mI (175721) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (180721) BH1750: Cường độ ánh sáng: 32.50 lx[0m
+[0;32mI (180941) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (185941) BH1750: Cường độ ánh sáng: 32.50 lx[0m
+[0;32mI (186291) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (191291) BH1750: Cường độ ánh sáng: 31.67 lx[0m
+[0;32mI (191391) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (196391) BH1750: Cường độ ánh sáng: 745.83 lx[0m
+[0;32mI (196511) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (201511) BH1750: Cường độ ánh sáng: 140.00 lx[0m
+[0;32mI (201731) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (206731) BH1750: Cường độ ánh sáng: 71.67 lx[0m
+[0;32mI (206831) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (211841) BH1750: Cường độ ánh sáng: 126.67 lx[0m
+[0;32mI (212491) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (217501) BH1750: Cường độ ánh sáng: 62.50 lx[0m
+[0;32mI (217601) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (222601) BH1750: Cường độ ánh sáng: 93.33 lx[0m
+[0;32mI (222691) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (227691) BH1750: Cường độ ánh sáng: 92.50 lx[0m
+[0;32mI (228701) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (233711) BH1750: Cường độ ánh sáng: 93.33 lx[0m
+[0;32mI (233881) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (238881) BH1750: Cường độ ánh sáng: 92.50 lx[0m
+[0;32mI (239161) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (244161) BH1750: Cường độ ánh sáng: 92.50 lx[0m
+[0;32mI (244681) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (249681) BH1750: Cường độ ánh sáng: 93.33 lx[0m
+[0;32mI (249851) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (254851) BH1750: Cường độ ánh sáng: 92.50 lx[0m
+[0;32mI (255481) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (260491) BH1750: Cường độ ánh sáng: 93.33 lx[0m
+[0;32mI (260601) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (265611) BH1750: Cường độ ánh sáng: 93.33 lx[0m
+[0;32mI (265731) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (270731) BH1750: Cường độ ánh sáng: 92.50 lx[0m
+[0;32mI (270971) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (275971) BH1750: Cường độ ánh sáng: 92.50 lx[0m
+[0;32mI (276171) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (281181) BH1750: Cường độ ánh sáng: 93.33 lx[0m
+[0;32mI (281501) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (286501) BH1750: Cường độ ánh sáng: 91.67 lx[0m
+[0;32mI (286731) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (291741) BH1750: Cường độ ánh sáng: 91.67 lx[0m
+[0;32mI (292241) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (297241) BH1750: Cường độ ánh sáng: 93.33 lx[0m
+[0;32mI (297521) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (302521) BH1750: Cường độ ánh sáng: 93.33 lx[0m
+[0;32mI (302731) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (307741) BH1750: Cường độ ánh sáng: 91.67 lx[0m
+[0;32mI (308321) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (313321) BH1750: Cường độ ánh sáng: 92.50 lx[0m
+[0;32mI (313571) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (318581) BH1750: Cường độ ánh sáng: 92.50 lx[0m
+[0;32mI (318761) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
+[0;32mI (323771) BH1750: Cường độ ánh sáng: 92.50 lx[0m
+[0;32mI (323861) HTTP: Đã gửi dữ liệu thành công! Code: 200[0m
