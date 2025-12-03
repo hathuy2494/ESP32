@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>ESP32 Lux Monitor</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background: #f0f0f0;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+
+            th,
+            td {
+                padding: 10px;
+                border: 1px solid #ccc;
+                text-align: center;
+            }
+
+            th {
+                background-color: #333;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>ESP32 Lux Monitor</h1>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Device ID</th>
+                    <th>Lux</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody id="data-body">
+                <!-- Dữ liệu sẽ chèn vào đây -->
+            </tbody>
+        </table>
+
+        <script src="script.js">
+            async function fetchData() {
+                try {
+                    const res = await fetch('/api/data');
+                    const data = await res.json();
+
+                    const tbody = document.querySelector('#data-table tbody');
+                    tbody.innerHTML = ''; // xóa dữ liệu cũ
+
+                    data.forEach(row => {
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `
+                        <td>${row.id}</td>
+                        <td>${row.device_id}</td>
+                        <td>${row.lux}</td>
+                        <td>${row.timestamp}</td>
+                    `;
+                        tbody.appendChild(tr);
+                    });
+                } catch (err) {
+                    console.error("Lỗi fetch dữ liệu:", err);
+                }
+            }
+
+            // Lấy dữ liệu ngay khi load
+            fetchData();
+            // Cập nhật dữ liệu mỗi 5 giây
+            setInterval(fetchData, 5000);
+        </script>
+    </body>
+
+</html>
